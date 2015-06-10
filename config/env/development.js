@@ -1,7 +1,13 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://45.55.215.109:27017/stocksearch-dev',
+	db: {
+		uri: 'mongodb://localhost/stocksearch-dev',
+		options: {
+						user: '',
+						pass: ''
+		}
+	},
 	app: {
 		title: 'stockSearch - Development Environment'
 	},
